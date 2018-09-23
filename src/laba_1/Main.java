@@ -10,13 +10,13 @@ public class Main {
 		 
  
 		 
-	System.out.println("1 - Возведения в степень 2^n  ");
-	System.out.println("2 - Вычесления произвольного факториала ");
-	System.out.println("3 - Находжения катета если известна гипотенуза и катет  ");
-	System.out.println("4 - Даны два действительных числа. Необходимо получить их\r\n" + 
-			"сумму, разность и произведение. Результат вывести на консоль ");
-	System.out.println("5 - Определить время свободного падения материального тела с\r\n" + 
-			"заданной высоты h. Результат вывести в консоль  ");
+	System.out.println("1 - Р’РѕР·РІРµРґРµРЅРёСЏ РІ СЃС‚РµРїРµРЅСЊ 2^n  ");
+	System.out.println("2 - Р’С‹С‡РµСЃР»РµРЅРёСЏ РїСЂРѕРёР·РІРѕР»СЊРЅРѕРіРѕ С„Р°РєС‚РѕСЂРёР°Р»Р° ");
+	System.out.println("3 - РќР°С…РѕРґР¶РµРЅРёСЏ РєР°С‚РµС‚Р° РµСЃР»Рё РёР·РІРµСЃС‚РЅР° РіРёРїРѕС‚РµРЅСѓР·Р° Рё РєР°С‚РµС‚  ");
+	System.out.println("4 - Р”Р°РЅС‹ РґРІР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹С… С‡РёСЃР»Р°. РќРµРѕР±С…РѕРґРёРјРѕ РїРѕР»СѓС‡РёС‚СЊ РёС…\r\n" + 
+			"СЃСѓРјРјСѓ, СЂР°Р·РЅРѕСЃС‚СЊ Рё РїСЂРѕРёР·РІРµРґРµРЅРёРµ. Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РІРµСЃС‚Рё РЅР° РєРѕРЅСЃРѕР»СЊ ");
+	System.out.println("5 - РћРїСЂРµРґРµР»РёС‚СЊ РІСЂРµРјСЏ СЃРІРѕР±РѕРґРЅРѕРіРѕ РїР°РґРµРЅРёСЏ РјР°С‚РµСЂРёР°Р»СЊРЅРѕРіРѕ С‚РµР»Р° СЃ\r\n" + 
+			"Р·Р°РґР°РЅРЅРѕР№ РІС‹СЃРѕС‚С‹ h. Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РІРµСЃС‚Рё РІ РєРѕРЅСЃРѕР»СЊ  ");
 	int a=scn.nextInt();
  
 
@@ -37,31 +37,31 @@ public class Main {
    
 	}
 	private static void verazheniy() {
-		System.out.println("Введите высоту с которой падает материальное тело");
+		System.out.println("Р’РІРµРґРёС‚Рµ РІС‹СЃРѕС‚Сѓ СЃ РєРѕС‚РѕСЂРѕР№ РїР°РґР°РµС‚ РјР°С‚РµСЂРёР°Р»СЊРЅРѕРµ С‚РµР»Рѕ");
 		 double h = scn.nextDouble();
-	        System.out.println("Время свободного падения материального тела = "+(Math.sqrt((2 * h) / 9.8))+" сек");
+	        System.out.println("Р’СЂРµРјСЏ СЃРІРѕР±РѕРґРЅРѕРіРѕ РїР°РґРµРЅРёСЏ РјР°С‚РµСЂРёР°Р»СЊРЅРѕРіРѕ С‚РµР»Р° = "+(Math.sqrt((2 * h) / 9.8))+"c");
 	}
 
 	private static void suma_raznost_proiz() {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Введите число а ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ Р° ");
 		double a =scn.nextDouble();
-		System.out.println("введите число b");
+		System.out.println("РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ b");
 		double b = scn.nextDouble();
 		double c = a*b;
 		double v=a+b;
 		double n = a-b;
-		System.out.println("Сумма  : "+v);
-		System.out.println("Разность : "+n);
-		System.out.println("Произведения : "+c);
+		System.out.println("РЎСѓРјРјР°  : "+v);
+		System.out.println("Р Р°Р·РЅРѕСЃС‚СЊ : "+n);
+		System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёСЏ : "+c);
 		
 	}
 
 	private static void vstepen() {
 		// TODO Auto-generated method stub
 		 Scanner scn = new Scanner(System.in);
-		 System.out.println("Введите степень числа 2^n");
+		 System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ С‡РёСЃР»Р° 2^n");
 	 double k = scn.nextDouble();
 		k = Math.pow(2,k);
 		System.out.println(k);
@@ -72,14 +72,14 @@ public class Main {
 	private static void katet() {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		System.out.println("Введите длину гипотенузы ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ РіРёРїРѕС‚РµРЅСѓР·С‹ ");
 		double c=scn.nextDouble();
-		System.out.println("Введите длину катета ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ РєР°С‚РµС‚Р° ");
 		double a=scn.nextDouble();
 		 
 		double otvet =Math.sqrt((c*c)-(a*a));
  
-		System.out.println("Длина катета = "+otvet);
+		System.out.println("Р”Р»РёРЅР° РєР°С‚РµС‚Р° = "+otvet);
 	 
 
 	}
@@ -87,13 +87,13 @@ public class Main {
 	private static void factorial() {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		System.out.println("Введите факториал");
+		System.out.println("Р’РІРµРґРёС‚Рµ С„Р°РєС‚РѕСЂРёР°Р»");
 		int n =scn.nextInt();
 		int k = 1;
 		for(int i = 1;i<=n;i++) {
 			k=k*i;
 		}
-		System.out.println("Факториал равен = "+k);
+		System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» СЂР°РІРµРЅ = "+k);
 		
 	}
  
@@ -101,5 +101,7 @@ public class Main {
 	
 	 
 	}
+
+ 
 
  
